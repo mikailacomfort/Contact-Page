@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;700&family=Montserrat:wght@100;200;300&family=Open+Sans:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+    <div class="container">
+        <h1 class="form-title">Let's Connect!</h1>
+    
+            <div class="main-user-info">
+                
+                <div class="user-input-box">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name"/>
+                </div> <!--close user-input-box-->
+                <div class="user-input-box">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="EX: 999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+                    </div><!--close user-input-box-->
+                    <div class="user-input-box">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Email" required/>
+                    </div><!--close user-input-box-->
+                    <div class="user-input-box">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter a short message" maxlength="500" minlength="30"></textarea>
+                    </div><!--close user-input-box-->
+                        
+                    <div class="hear-about">
+                        <span class="hear-about-title">How did you hear about me?</span>
+                        <div class="hear-about-response">
+                        <div class="classmate box">
+                            <input type="checkbox" id="classmate" name="hear-about"/>
+                            <label for="classmate">Classmate</label>
+                        </div><!--close classmate-->
+                    
+                        <div class="resume-submission box">
+                            <input type="checkbox" id="resume-submission" name="hear-about"/>
+                            <label for="resume-submission">Resume Submission</label>
+                        </div><!--close resume-submission-->
+                    
+                        <div class="linkedin box">
+                            <input type="checkbox" id="linkedin" name="hear-about"/>
+                            <label for="linkedin">LinkedIn</label>
+                        </div><!--close linkedin-->
+                    
+                        <div class="coding-academy box">
+                            <input type="checkbox" id="coding-academy-rec" name="hear-about">
+                            <label for="coding-academy">Coding Academy</label>
+                        </div><!--close coding-academy-->
+                        </div><!--close hear-about-response-->
+            </div><!--close hear-about-->
+            
+            <div class="break"></div>
+
+<div class="contact">
+    <span class="contact-title">Should I reach out?</span>
+    <div class="contact-response">
+            
+            <input type="radio" id="yes" name="contact-back">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="contact-back">
+            <label for="no">No</label>
+    </div><!--close contact-response-->
+</div><!--close contact-->
+
+<div class="birthday">
+    <span class="birthday-title">Sign up for a birthday wish!</span>
+    <div class="birthday-response"></div>
+        <label for="birthday"></label>
+        <input type="date" id="birthday" name="birthday">
+    </div><!--close birthday-response-->
+</div><!--close birthday-->
+    
+    <div class="submit-button">
+        <input type="submit" value="Submit" onclick="submitForm();">
+    </div><!--close submit-button-->
+
+    </div><!--close main-user-info-->
+</div><!--close container-->
+</body>
+</html>
+
